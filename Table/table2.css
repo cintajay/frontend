@@ -1,0 +1,19 @@
+table{
+    background-color: black;
+    border-collapse: collapse;
+    border-color: gray;
+    padding:10px;
+    border: 1px solid gray;
+    
+}
+td,th{
+    color:white;
+    border: 1px solid ghostwhite;
+    padding:10px;
+}
+h1{
+    color:white;
+    text-align: center;
+    font-weight: lighter;
+    font-family: Arial;
+}

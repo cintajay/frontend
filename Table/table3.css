@@ -1,0 +1,27 @@
+table{
+    border:1px solid darkslategray;
+    border-collapse:collapse ;
+    padding: 10px;
+}
+th{
+    border:1px solid darkslategray;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: gray;
+
+}
+td{
+    border:1px solid darkslategray;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+tr:nth-child(even){
+    background-color: rgb(239, 238, 238);
+}
+tr:nth-child(1){
+    background-color: rgb(239, 238, 238);
+}
+.outlined{
+    border:3px solid black; 
+}
