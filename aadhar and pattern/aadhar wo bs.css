@@ -1,0 +1,10 @@
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap:5px;
+}
+.container2{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
