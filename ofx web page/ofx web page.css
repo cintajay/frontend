@@ -1,0 +1,115 @@
+.toptaskbar{
+    display: grid;
+    background-color: dimgray;
+    padding:5px;
+   
+    
+}
+
+body{
+    background-color: rgb(255, 246, 233);
+}
+
+@media screen and (max-width:768px) {
+    .toptaskbar{
+        grid-template-columns: 0.1fr 4fr 1fr;
+
+    }
+    .hidetaskbar{
+        display:none;
+    }
+    .container2{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .dropdown{
+        float: right;    
+    }
+    .dropbuttonstyle{
+        background-color: dimgrey;
+    }
+    .dropdown-content{
+        display:none;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: blanchedalmond;}
+}
+
+@media screen and (min-width:769px) {
+    .toptaskbar{
+        grid-template-columns: 1fr 6fr 1fr;    
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+        column-gap:10px;
+    }
+    .hide{
+        display: none;
+    }
+}
+.rightalign{
+    float:right;
+}
+.toppart{
+    background-color: rgb(221, 219, 219);
+    padding:20px;
+    border:20px;
+    border-color:rgb(221, 219, 219) ;
+    padding-left:120px;
+   
+    
+}
+.box{
+    background-color:white;
+    width:100%;
+    height:100%;
+    font-weight: 500;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius:5px;
+
+}
+.products{
+    height: 200px; 
+    width: 150px; 
+    object-fit:contain;
+    
+    
+}
+.gridnew{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+.buttonstyled{
+    background-color: #f1356d ;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    border-radius:5px;
+    border-color:#f1356d;
+    padding:10px;
+    margin-top:20px;
+
+}
+a{
+    color:grey;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover{
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+.bottomtaskbar{
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 98%;
+    color:white;
+}
+
+
