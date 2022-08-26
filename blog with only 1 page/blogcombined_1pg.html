@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog_1pg.css">
+    
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div></div>
+        <div>
+            <h class="pinkfont1">The Dojo Blog</h>
+            <nav class="rightnavbar">
+                <button onclick="hidepage('1') ; func_toggle('1')" id="homeid" class="greyfont buttonstyle">Home</button> 
+                <button onclick="hidepage('2') ; func_toggle('2')" id="newblogid" class="greyfont">New Blog</button>   
+            </nav>
+        </div>
+        <div></div>
+    </div>
+
+    <p style="height:0px;"></p>
+    <div class="greyline"></div>
+    <p style="height:25px;"></p>
+            
+        
+    <div class="container2 ">
+        <div></div>
+        <div  id="home">
+            <h3 class="pinkfont1">All blogs!</h3>
+            <dl id="mylist">
+
+            </dl>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="container2" >
+        <div></div>
+        <div  id="newblog" class="hide" >
+            <d class="pinkfont1">Add a New Blog</d>
+            <p style="height: 25px"></p>
+           
+            <label for="title">Blog Title:</label><br/>
+            <input type="text" id="titleid" name="title"><br/>
+            <label for="body">Blog Body:</label><br/>
+            <textarea name="body" id="bodyid" cols="25" rows="2"></textarea><br/>
+            <label for="author">Blog Author:</label><br/>
+            <input type="text"id="authorid"name="author"autocomplete="on"><br/><br/>
+            <input type="submit"   class="buttonstyle" value="Add Blog" onclick="func_addnew()"/>
+            
+            </div>
+
+            <p id="demo" class="requiredstyle"></p>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div class="container2">
+        <div></div>
+        <div  id="blogentrynew" class="hide">
+            <h3 id="headingid"></h3>
+            <p id="authornameid"></p>
+            <p id="bodydetailsid"></p>
+            <button class="buttonstyle">delete</button>
+            <button class="buttonstyle rightnavbar" onclick="func_edit_hiderest('1') ; placeholder() ">edit</button>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="container2" >
+        <div></div>
+        <div  id="editblogid" class="hide" >
+            <d class="pinkfont1">Edit Blog</d>
+            <p style="height: 25px"></p>
+            
+            <label for="title">Blog Title:</label><br/>
+            <input type="text" id="edittitleid" name="title"><br/>
+            <label for="body">Blog Body:</label><br/>
+            <textarea name="body" id="editbodyid" cols="25" rows="2"></textarea><br/>
+            <label for="author">Blog Author:</label><br/>
+            <input type="text"id="editauthorid"name="author"autocomplete="on"><br/><br/>
+            <input type="submit"   class="buttonstyle" value="Save Blog" onclick="edit() ; save()"/>
+            </div>
+
+        </div>
+        <div></div>
+    </div>
+
+
+    <script src="blogjs_1pg.js"></script>
+</body>
