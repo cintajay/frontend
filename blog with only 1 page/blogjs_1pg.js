@@ -70,8 +70,6 @@ function func_addnew(){
     node2.setAttribute("id",j)
     
 
-
-
     node2.appendChild(textnode2);
     document.getElementById("mylist").appendChild(node1).className="pinkfont1 buttonsimple";
     document.getElementById("mylist").appendChild(node2); 
@@ -172,10 +170,15 @@ function edit(){
 
 }
 
-function save(){
-    
-    
-    
+function save(){     
     console.log("saved")
+}
+function deleted(){
+
+    item=document.getElementById(x+1)
+    item2=document.getElementById(100+x+1)
+    item.parentNode.removeChild(item)
+    item2.parentNode.removeChild(item2)
+
 }
 
